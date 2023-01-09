@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+	NFC
+</title>
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__container">
+				<a class="header__icon" href="index.html">
+					<img src="images/icons/logo.svg" alt="logo img">
+				</a>
+				<div class="header__burger">
+					<img src="images/icons/nav-menu.svg" alt="">
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="marketplace.html">
+								Marketplace
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="rankings.html">
+								Rankings
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="connect.html">
+								Connect a wallet
+							</a>
+						</li>
+						<li class="header__nav-item header__nav-item--btn">
+							<a class="header__nav-link header__nav-link--btn" href="registration.html">
+								Sign Up
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			<div class="profile-bg">
+				<div class="profile-bg__inner">
+					<picture class="profile-bg__images">
+						<source srcset="images/random/profile-3.jpg" media="(max-width: 740px)">
+						<source srcset="images/random/profile-2.jpg" media="(max-width: 1280px)">
+						<img src="images/random/profile-1.jpg" alt="profile img">
+					</picture>
+					<div class="profile-bg__avatar">
+						<img src="images/avatar/profile.jpg" alt="avatar">
+					</div>
+				</div>
+			</div>
+			<section class="profile-top">
+				<div class="container">
+					<div class="profile-top__inner">
+						<div class="profile-top__info">
+							<h5 class="profile-top__title">
+								Animakid
+							</h5>
+							<ul class="profile-top__list">
+								<li class="profile-top__list-item">
+									<h4 class="profile-top__list-title">
+										250k+
+									</h4>
+									<p class="profile-top__list-text">
+										Volume
+									</p>
+								</li>
+								<li class="profile-top__list-item">
+									<h4 class="profile-top__list-title">
+										50+
+									</h4>
+									<p class="profile-top__list-text">
+										NFTs Sold
+									</p>
+								</li>
+								<li class="profile-top__list-item">
+									<h4 class="profile-top__list-title">
+										3000+
+									</h4>
+									<p class="profile-top__list-text">
+										Followers
+									</p>
+								</li>
+							</ul>
+							<div class="profile-top__bio">
+								<h5 class="profile-top__bio-title">
+									Bio
+								</h5>
+								<p class="profile-top__bio-text">
+									The internet's friendliest designer kid.
+								</p>
+							</div>
+							<div class="profile-top__social">
+								<h5 class="profile-top__social-title">
+									Links
+								</h5>
+								<ul class="profile-top__social-list">
+									<li class="profile-top__social-item">
+										<a class="profile-top__social-link" href="#">
+											<img src="images/icons/globe.svg" alt="">
+										</a>
+									</li>
+									<li class="profile-top__social-item">
+										<a class="profile-top__social-link" href="#">
+											<img src="images/icons/discord.svg" alt="">
+										</a>
+									</li>
+									<li class="profile-top__social-item">
+										<a class="profile-top__social-link" href="#">
+											<img src="images/icons/youtube.svg" alt="">
+										</a>
+									</li>
+									<li class="profile-top__social-item">
+										<a class="profile-top__social-link" href="#">
+											<img src="images/icons/twitter.svg" alt="">
+										</a>
+									</li>
+									<li class="profile-top__social-item">
+										<a class="profile-top__social-link" href="#">
+											<img src="images/icons/instagram.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="profile-top__buttons">
+							<div class="profile-top__buttons-copy" id="successMessage">Key copy</div>
+							<img class="profile-top__copy-decor" src="images/icons/copy.svg" alt=""><input
+								class="profile-top__key" type="text" id="clickboardIpnput" value="0x2d72...8b0f" readonly>
+							<button class="profile-top__follow" type="submit">Follow</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="buttons-mix">
+				<div class="container">
+					<div class="buttons-mix__inner">
+						<button class="buttons-mix__btn" data-filter=".created">
+							Created <span>302</span>
+						</button>
+						<button class="buttons-mix__btn" data-filter=".owned">
+							Owned <span>67</span>
+						</button>
+						<button class="buttons-mix__btn" data-filter=".collections">
+							Collection <span>4</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<section class="nft-cards">
+				<div class="container">
+					<div class="nft-cards__inner ">
+						<div class="more-nft__item mix created collections">
+							<img class="more-nft__img" src="images/nft/1.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned">
+							<img class="more-nft__img" src="images/nft/2.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned ">
+							<img class="more-nft__img" src="images/nft/3.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix created owned collections">
+							<img class="more-nft__img" src="images/nft/1.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned">
+							<img class="more-nft__img" src="images/nft/2.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned">
+							<img class="more-nft__img" src="images/nft/3.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix created owned">
+							<img class="more-nft__img" src="images/nft/1.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned collections">
+							<img class="more-nft__img" src="images/nft/2.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned">
+							<img class="more-nft__img" src="images/nft/3.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix created">
+							<img class="more-nft__img" src="images/nft/1.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned collections">
+							<img class="more-nft__img" src="images/nft/2.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-nft__item mix owned">
+							<img class="more-nft__img" src="images/nft/3.jpg" alt="nft img">
+							<div class="more-nft__box">
+								<h5 class="more-nft__title">
+									<a href="#">NFT Name</a>
+								</h5>
+								<a class="more-nft__author" href="#">
+									<img class="more-nft__avatar" src="images/avatar/fox.png" alt="avatar">
+									<p class="more-nft__name">
+										NFT Artist
+									</p>
+								</a>
+								<div class="more-nft__info">
+									<div class="more-nft__price">
+										<p class="more-nft__info-title">
+											Price
+										</p>
+										<p class="more-nft__info-number">
+											1.63 ETH
+										</p>
+									</div>
+									<div class="more-nft__bid">
+										<p class="more-nft__info-title">
+											Highest Bid
+										</p>
+										<p class="more-nft__info-number">
+											0.33 wETH
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__content">
+						<div class="footer__marketplace">
+							<a href="#">
+								<img class="footer__logo" src="images/icons/logo.svg" alt="logo img">
+							</a>
+							<p class="footer__marketplace-info">
+								NFT marketplace UI created with Anima for Figma.
+							</p>
+							<p class="footer__marketplace-community">
+								Join our community
+							</p>
+							<ul class="footer__marketplace-list">
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/discord.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/youtube.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/twitter.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/instagram.svg" alt="social logo">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__explore">
+							<h5 class="footer__explore-title">
+								Explore
+							</h5>
+							<ul class="footer__explore-list">
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Marketplace
+									</a>
+								</li>
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Rankings
+									</a>
+								</li>
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Connect a wallet
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__join">
+							<h5 class="footer__join-title">
+								Join our weekly digest
+							</h5>
+							<p class="footer__join-text">
+								Get exclusive promotions & updates straight to your inbox.
+							</p>
+							<form class="subscribe__form" action="#">
+								<input class="subscribe__input" type="email" placeholder="Enter Your Email">
+								<button class="subscribe__btn">
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">
+							Ⓒ NFT Market. Use this template freely.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

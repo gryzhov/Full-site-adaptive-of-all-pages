@@ -1,0 +1,1241 @@
+@import "config/fonts";
+@import "config/vars";
+@import "config/reset";
+@import "config/global";
+@import "config/libs";
+
+@import "config/media";
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	&__inner {
+		height: 100px;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 50px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			background-color: #2b2b2b;
+		}
+	}
+	&__icon {
+		z-index: 5;
+		img {
+			max-width: 100%;
+			display: block;
+		}
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		width: 1370px;
+		margin: auto;
+		align-items: center;
+		z-index: 3;
+	}
+	&__nav-list {
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 3;
+	}
+	&__nav-item {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		align-items: center;
+		color: #fff;
+		margin-left: 50px;
+		&:hover {
+			text-shadow: 2px 4px 3px #a259ff;
+		}
+	}
+	&__nav-link--btn {
+		padding: 19px 30px 19px 62px;
+		background-color: #a259ff;
+		border-radius: 20px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 30px;
+			top: 20px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/user.svg);
+		}
+	}
+	&__burger {
+		cursor: pointer;
+		z-index: 3;
+	}
+}
+.footer {
+	background-color: #3b3b3b;
+	padding: 40px 0;
+	&__content {
+		display: flex;
+		padding-bottom: 50px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #858584;
+	}
+	&__marketplace,
+	&__join-text {
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #cccccc;
+		margin-right: 110px;
+	}
+	&__marketplace-info {
+		width: 250px;
+		margin-bottom: 20px;
+	}
+	&__logo {
+		margin-bottom: 30px;
+	}
+	&__marketplace-list {
+		margin-top: 15px;
+		display: flex;
+		gap: 10px;
+	}
+	&__explore-title,
+	&__join-title {
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 25px;
+	}
+	&__explore-list {
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #cccccc;
+	}
+	&__explore-item {
+		margin-bottom: 20px;
+	}
+	&__join {
+		margin-left: 140px;
+	}
+	.subscribe__form {
+		margin-top: 20px;
+	}
+}
+.discover {
+	margin-top: 60px;
+	padding: 120px 0 80px 0;
+	background-color: #2b2b2b;
+	&__inner {
+		display: flex;
+	}
+	&__content {
+		width: 500px;
+		margin-right: 30px;
+	}
+	&__content-title {
+		font-weight: 600;
+		font-size: 6.7rem;
+		line-height: 110%;
+		margin-bottom: 20px;
+	}
+	&__content-text {
+		font-weight: 400;
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 50px;
+	}
+	&__content-btn {
+		font-size: 1.6rem;
+		line-height: 140%;
+		font-weight: 600;
+		padding: 19px 50px 19px 82px;
+		background-color: #a259ff;
+		border-radius: 20px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50px;
+			top: 20px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/rocket.svg);
+		}
+		&:hover {
+			background: linear-gradient(128.15deg, #a259ff 49.75%, #377df7 136.56%);
+		}
+	}
+	&__statistic {
+		margin-top: 60px;
+	}
+	&__statistic-list {
+		display: flex;
+		gap: 65px;
+	}
+	&__statistic-title {
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.8rem;
+		line-height: 140%;
+	}
+	&__statistic-subtitle {
+		font-size: 2.4rem;
+		line-height: 160%;
+	}
+	&__nft {
+		width: 510px;
+	}
+	&__nft-images {
+		img {
+			border-radius: 25px 25px 0px 0px;
+			height: auto;
+			width: 100%;
+			max-width: 510px;
+		}
+	}
+	&__nft-box {
+		background-color: #3b3b3b;
+		border-radius: 0px 0px 20px 20px;
+		width: 510px;
+		height: 110px;
+		padding: 22px 20px;
+	}
+	&__nft-title {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		margin-bottom: 10px;
+	}
+	&__nft-author {
+		display: flex;
+		align-items: center;
+		width: 100px;
+	}
+	&__nft-name {
+		font-size: 1.6rem;
+		line-height: 140%;
+		margin-left: 12px;
+	}
+}
+.section-name {
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	.title {
+		font-weight: 600;
+		font-size: 3.8rem;
+		line-height: 120%;
+		margin-bottom: 10px;
+	}
+	.subtitle {
+		font-weight: 400;
+		font-size: 2.2rem;
+		line-height: 160%;
+	}
+	.btn {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		width: 250px;
+		height: 60px;
+		margin-top: 20px;
+		border: 2px solid #a259ff;
+		border-radius: 20px;
+		text-align: center;
+		padding-top: 16px;
+		padding-left: 50px;
+		position: relative;
+		&:hover {
+			background: linear-gradient(128.15deg, #a259ff 49.75%, #377df7 136.56%);
+		}
+	}
+}
+.collection {
+	padding: 80px 0;
+	background-color: #2b2b2b;
+	&__content {
+		display: flex;
+		gap: 30px;
+	}
+	&__main-img {
+		border-radius: 25px;
+		max-width: 330px;
+		max-height: 330px;
+		margin-bottom: 15px;
+	}
+	&__item-img {
+		display: flex;
+		gap: 15px;
+		margin-bottom: 15px;
+		img {
+			border-radius: 25px;
+		}
+	}
+	&__more-img {
+		margin: auto;
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 160%;
+		a {
+			padding: 32.5px 16px 32.5px 16px;
+			background: #a259ff;
+			border-radius: 20px;
+			&:hover {
+				background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+			}
+		}
+	}
+	&__item-title {
+		font-size: 2.2rem;
+		line-height: 140%;
+		margin-bottom: 10px;
+	}
+	&__item-author {
+		display: flex;
+		align-items: center;
+		width: 0px;
+	}
+	&__item-avatar {
+		border-radius: 50%;
+		margin-right: 12px;
+	}
+	&__item-name {
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+}
+.creators {
+	padding: 80px 0;
+	background-color: #2b2b2b;
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+	}
+	&__item {
+		width: 240px;
+		height: 238px;
+		background: #3b3b3b;
+		border-radius: 20px;
+		text-align: center;
+		span {
+			font-family: "SpaceMono";
+			color: #858584;
+			font-size: 1.6rem;
+			line-height: 140%;
+			position: absolute;
+			margin-top: 18px;
+			margin-left: -30px;
+			padding-top: 3px;
+			width: 30px;
+			height: 30px;
+			background: #2b2b2b;
+			border-radius: 50%;
+		}
+	}
+	&__item-img {
+		img {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			width: 120px;
+			height: 120px;
+		}
+	}
+	&__item-title {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+	}
+	&__item-stats {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	&__sales {
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #858584;
+	}
+	&__sales-number {
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+		margin-left: 10px;
+	}
+	.creators-btn {
+		&::before {
+			content: "";
+			position: absolute;
+			left: 52px;
+			top: 16px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/rocket-color.svg);
+		}
+		&:hover {
+			&::before {
+				background-image: url(../images/icons/rocket.svg);
+			}
+		}
+	}
+}
+.category {
+	background-color: #2b2b2b;
+	padding: 80px 0;
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+	}
+	&__item {
+		width: 240px;
+		height: 316px;
+		img {
+			border-radius: 25px 25px 0px 0px;
+			width: 240px;
+			height: 240px;
+		}
+		position: relative;
+		span {
+			top: 0px;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			width: 240px;
+			height: 240px;
+			border-radius: 25px 25px 0px 0px;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(7.5px);
+			opacity: 0;
+			img {
+				margin-top: 70px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+		&:hover {
+			span {
+				opacity: 1;
+			}
+		}
+	}
+	&__item-title {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		width: 240px;
+		height: 75px;
+		background: #3b3b3b;
+		border-radius: 0 0 25px 25px;
+		padding-top: 20px;
+		padding-left: 30px;
+	}
+}
+.more-nft {
+	padding: 80px 0;
+	background-color: #2b2b2b;
+	.more-nft__btn {
+		width: 190px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 52px;
+			top: 16px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/eye.svg);
+		}
+	}
+	&__content {
+		display: flex;
+		gap: 30px;
+	}
+	&__item {
+		width: 330px;
+	}
+	&__img {
+		width: 330px;
+		height: 296px;
+		border-radius: 25px 25px 0px 0px;
+	}
+	&__box {
+		background: #3b3b3b;
+		border-radius: 0 0 25px 25px;
+		padding: 20px 30px 25px 30px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		margin-bottom: 5px;
+	}
+	&__author {
+		display: flex;
+		align-items: center;
+		width: 145px;
+		margin-bottom: 25px;
+	}
+	&__avatar {
+		width: 24px;
+		height: 24px;
+		margin-right: 12px;
+	}
+	&__name {
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info-title {
+		font-family: "SpaceMono";
+		font-size: 1.2rem;
+		line-height: 110%;
+		color: #858584;
+		margin-bottom: 8px;
+	}
+	&__info-number {
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+}
+.highlight {
+	background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%), url(../images/random/highlite-bg.jpg);
+	background-size: cover;
+	background-position: top;
+	height: 640px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 360px;
+	}
+	&__author {
+		align-items: center;
+		padding-left: 20px;
+		display: flex;
+		gap: 12px;
+		width: 150px;
+		height: 45px;
+		background: #3b3b3b;
+		border-radius: 20px;
+		margin-bottom: 30px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 5.1rem;
+		line-height: 110%;
+		margin-bottom: 50px;
+	}
+	&__btn {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		padding: 19px 50px 19px 82px;
+		background: #ffffff;
+		border-radius: 20px;
+		color: #000;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50px;
+			top: 20px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/eye.svg);
+		}
+	}
+	&__timer {
+		padding-top: 165px;
+	}
+}
+.works {
+	background-color: #2b2b2b;
+	padding: 80px 0;
+	&__content {
+		display: flex;
+		gap: 30px;
+	}
+	&__item {
+		width: 330px;
+		height: 440px;
+		background: #3b3b3b;
+		border-radius: 20px;
+		text-align: center;
+		img {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+}
+.subscribe {
+	padding: 80px 0;
+	background: #2b2b2b;
+	&__item {
+		display: flex;
+		gap: 80px;
+		padding: 60px;
+		background: #3b3b3b;
+		border-radius: 20px;
+		img {
+			width: 425px;
+			height: 310px;
+			border-radius: 25px;
+		}
+	}
+	&__item-box {
+		max-width: 425px;
+	}
+	&__item-title {
+		font-weight: 600;
+		font-size: 3.8rem;
+		line-height: 120%;
+		margin-bottom: 10px;
+	}
+	&__item-text {
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 40px;
+	}
+	&__input {
+		padding: 20px 60px 20px 20px;
+		width: 265px;
+		height: 60px;
+		border-radius: 20px;
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+	&__btn {
+		position: absolute;
+		padding: 19px 50px 19px 82px;
+		background: #a259ff;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #fff;
+		margin-left: -50px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50px;
+			top: 20px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/email.svg);
+		}
+	}
+}
+.registration {
+	background-color: #2b2b2b;
+	&__inner {
+		display: flex;
+	}
+	&__content {
+		margin-top: 80px;
+		margin-left: 60px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 5.1rem;
+		line-height: 110%;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-size: 2.2rem;
+		line-height: 160%;
+		width: 460px;
+		margin-bottom: 40px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		input {
+			border: 1px solid #858584;
+			border-radius: 20px;
+			width: 330px;
+			height: 46px;
+			padding: 20px 20px 20px 50px;
+			font-size: 1.6rem;
+			line-height: 140%;
+			color: #2b2b2b;
+			margin-bottom: 15px;
+		}
+		span {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 20px;
+				top: -47px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+	&__name {
+		&::before {
+			background-image: url(../images/icons/user-color.svg);
+		}
+	}
+	&__email {
+		&::before {
+			background-image: url(../images/icons/email-color.svg);
+		}
+	}
+	&__password,
+	&__password--2 {
+		&::before {
+			background-image: url(../images/icons/pass.svg);
+		}
+	}
+	&__btn {
+		width: 330px;
+		padding: 12px 0;
+		background: #a259ff;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #fff;
+		letter-spacing: 1px;
+	}
+}
+.profile-bg {
+	background: #2b2b2b;
+	margin-top: 100px;
+	&__images {
+		img {
+			height: 320px;
+			width: 100%;
+		}
+	}
+	&__avatar {
+		max-width: 1050px;
+		margin: -65px auto 0 auto;
+		img {
+			border-radius: 25px;
+		}
+	}
+}
+.profile-top {
+	background: #2b2b2b;
+	&__inner {
+		display: flex;
+		padding: 40px 0;
+	}
+	&__info {
+		width: 600px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 5.1rem;
+		line-height: 110%;
+		margin-bottom: 30px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 510px;
+		margin-bottom: 30px;
+	}
+	&__list-title {
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.8rem;
+		line-height: 140%;
+	}
+	&__list-text {
+		font-weight: 400;
+		font-size: 2.2rem;
+		line-height: 160%;
+	}
+	&__bio-title,
+	&__social-title {
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 160%;
+		color: #858584;
+		margin-bottom: 10px;
+	}
+	&__bio-text {
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 30px;
+	}
+	&__social-list {
+		display: flex;
+		gap: 10px;
+	}
+	&__buttons {
+		margin-left: 100px;
+	}
+	&__copy-decor {
+		position: relative;
+		margin-right: -35px;
+		margin-top: 20px;
+		width: 22px;
+	}
+	&__key {
+		width: 186px;
+		height: 60px;
+		padding-left: 52px;
+		background: #a259ff;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #fff;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+	&__follow {
+		margin-left: 10px;
+		padding: 17px 30px 17px 62px;
+		background-color: inherit;
+		border: 2px solid #a259ff;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #ffffff;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 30px;
+			top: 18px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/plus.svg);
+		}
+		&--image {
+			position: relative;
+			&::before {
+				content: "You";
+				position: absolute;
+				left: 25px;
+				top: 17px;
+				background-image: none;
+			}
+		}
+	}
+	&__buttons-copy {
+		margin-top: 10px;
+		margin-left: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		padding-top: 10px;
+		height: 40px;
+		background: #a259ff;
+		width: 140px;
+		text-align: center;
+		display: none;
+		&.active {
+			display: block;
+			position: absolute;
+		}
+	}
+}
+.buttons-mix,
+.creators-buttons,
+.nfts-collection {
+	background: #2b2b2b;
+	padding-top: 20px;
+	&__btn {
+		padding-bottom: 10px;
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		color: #858584;
+		background-color: inherit;
+		width: 210px;
+		span {
+			font-family: "SpaceMono";
+			font-size: 1.6rem;
+			line-height: 140%;
+			color: #fff;
+			padding: 5px 10px;
+			background: #3b3b3b;
+			border-radius: 20px;
+		}
+	}
+	.mixitup-control-active {
+		color: #fff;
+		border-bottom: 2px solid #858584;
+		span {
+			background: #858584;
+		}
+	}
+}
+.nft-cards {
+	background: #3b3b3b;
+	&__inner {
+		padding: 80px 0;
+		display: grid;
+		gap: 30px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.more-nft__box {
+		background-color: #2b2b2b;
+	}
+}
+.artist-bg {
+	margin-top: 100px;
+	background: #2b2b2b;
+	&__inner {
+		max-width: 1280px;
+		margin: auto;
+		img {
+			height: auto;
+			width: 100%;
+			max-width: 1280px;
+		}
+	}
+}
+.artist-info {
+	background: #2b2b2b;
+	padding: 40px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content {
+		max-width: 615px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 5.1rem;
+		line-height: 110%;
+		margin-bottom: 10px;
+	}
+	&__date {
+		font-size: 2.2rem;
+		line-height: 160%;
+		color: #858584;
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		font-family: "SpaceMono";
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 160%;
+		color: #858584;
+		margin-bottom: 10px;
+	}
+	&__author {
+		display: flex;
+		align-items: center;
+		max-width: 100px;
+		margin-bottom: 30px;
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		margin-left: 12px;
+	}
+	&__text {
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 30px;
+		span {
+			display: block;
+			padding: 30px 0;
+		}
+		.top-decor {
+			padding: 0;
+		}
+	}
+	&__link {
+		display: flex;
+		font-size: 2.2rem;
+		line-height: 160%;
+		& + .artist-info__link {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+	}
+	&__link-text {
+		margin-left: 10px;
+	}
+	&__list {
+		display: flex;
+		gap: 20px;
+		padding-top: 20px;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		letter-spacing: 1px;
+	}
+	&__item {
+		a {
+			padding: 12px 30px;
+			background: #3b3b3b;
+			border-radius: 20px;
+		}
+	}
+	&__button {
+		margin-top: 30px;
+	}
+	&__time-btn {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 140%;
+		padding: 19px 80px 19px 80px;
+		background: #a259ff;
+		border-radius: 20px;
+	}
+	#clockdiv {
+		margin-top: 0px;
+		height: 235px;
+	}
+}
+.more-nft {
+	.more-nft--btn {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50px;
+			top: 18px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../images/icons/arrowright.svg);
+		}
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.connect {
+	background: #2b2b2b;
+	margin-top: 100px;
+	&__container {
+		max-width: 1090px;
+		margin: auto;
+	}
+	&__inner {
+		display: flex;
+		gap: 60px;
+	}
+	&__content {
+		padding: 80px 0;
+		width: 460px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 5.1rem;
+		line-height: 110%;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-size: 2.2rem;
+		line-height: 160%;
+		margin-bottom: 40px;
+	}
+	&__link {
+		display: block;
+		width: 320px;
+		padding: 20px 20px 20px 100px;
+		background: #3b3b3b;
+		border: 1px solid #a259ff;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 40px;
+			top: 16px;
+			width: 40px;
+			height: 40px;
+		}
+		& + .connect__link {
+			margin-top: 20px;
+		}
+	}
+	&__link--metamask {
+		&::before {
+			background-image: url(../images/icons/metamask.svg);
+		}
+	}
+	&__link--wallet {
+		&::before {
+			background-image: url(../images/icons/wallet.svg);
+		}
+	}
+	&__link--coinbase {
+		&::before {
+			background-image: url(../images/icons/coinbase.svg);
+		}
+	}
+}
+.top-creators {
+	padding: 80px 0;
+	color: #fff;
+	background: #2b2b2b;
+	&__inner {
+		margin-top: 100px;
+	}
+}
+.creators-buttons {
+	&__btn {
+		width: 258px;
+		letter-spacing: 1px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+.rankings {
+	background: #2b2b2b;
+	padding: 40px 0;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #858584;
+		padding: 12px 0;
+		border: 1px solid #3b3b3b;
+		border-radius: 20px;
+	}
+	&__top-left {
+		display: flex;
+		padding-left: 30px;
+	}
+	&__artist {
+		padding-left: 30px;
+	}
+	&__list {
+		display: flex;
+	}
+	&__list-item {
+		padding-right: 120px;
+	}
+	&__item {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #3b3b3b;
+		border-radius: 20px;
+		padding: 12px 0;
+	}
+	&__item-author {
+		display: flex;
+		align-items: center;
+	}
+	&__item-stats {
+		display: flex;
+		margin-right: 100px;
+	}
+	&__item-img {
+		width: 60px;
+	}
+	&__item-place {
+		padding: 4px 10px;
+		background: #2b2b2b;
+		border-radius: 20px;
+		margin: 0 20px;
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #858584;
+	}
+	&__item-name {
+		margin-left: 20px;
+		margin-right: 55px;
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 140%;
+	}
+	&__item-change,
+	&__item-sold,
+	&__item-volume {
+		font-family: "SpaceMono";
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+	&__item-change {
+		color: #00ac4f;
+		margin-right: 120px;
+	}
+	&__item-sold {
+		margin-right: 180px;
+	}
+}
+.browse {
+	margin-top: 100px;
+	padding: 80px 0;
+	background: #2b2b2b;
+	&__input {
+		width: 100%;
+		border: 1px solid #3b3b3b;
+		border-radius: 20px;
+		background-color: inherit;
+		padding: 18px 80px 18px 20px;
+		font-size: 1.6rem;
+		line-height: 140%;
+		color: #858584;
+	}
+	&__btn {
+		position: absolute;
+		margin-top: 18px;
+		margin-left: -70px;
+		background-color: inherit;
+	}
+}
+.nfts-collection {
+	&__btn {
+		width: 520px;
+		span {
+			margin-left: 15px;
+		}
+	}
+	&__content {
+		padding: 60px 0;
+	}
+	&__collections,
+	&__nft {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+	NFC
+</title>
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__container">
+				<a class="header__icon" href="index.html">
+					<img src="images/icons/logo.svg" alt="logo img">
+				</a>
+				<div class="header__burger">
+					<img src="images/icons/nav-menu.svg" alt="">
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="marketplace.html">
+								Marketplace
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="rankings.html">
+								Rankings
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="connect.html">
+								Connect a wallet
+							</a>
+						</li>
+						<li class="header__nav-item header__nav-item--btn">
+							<a class="header__nav-link header__nav-link--btn" href="registration.html">
+								Sign Up
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			<section class="registration">
+				<div class="container">
+					<div class="registration__inner">
+						<picture class="registration__images">
+							<source srcset="images/random/reg-3.jpg" media="(max-width: 800px)">
+							<source srcset="images/random/reg-2.jpg" media="(max-width: 1200px)">
+							<img src="images/random/reg-1.jpg" alt="reg img">
+						</picture>
+						<div class="registration__content">
+							<h5 class="registration__title">
+								Create account
+							</h5>
+							<p class="registration__text">
+								Welcome! enter your details and start creating, collecting and selling NFTs.
+							</p>
+							<form class="registration__form" action="#">
+								<input class="registration__input-name" type="text" placeholder="Username"><span
+									class="registration__name"></span>
+								<input class="registration__input-email" type="email" placeholder="Email Address">
+								<span class="registration__email"></span>
+								<input class="registration__password" id="password" name="password" type="password"
+									pattern="^\S{6,}$"
+									onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;"
+									placeholder="Password" required> <span class="registration__password"></span>
+								<input class="registration__password--2" id="password_two" name="password_two" type="password"
+									pattern="^\S{6,}$"
+									onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');"
+									placeholder="Confirm Password" required><span class="registration__password"></span>
+								<button class="registration__btn" type="submit">Create account</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__content">
+						<div class="footer__marketplace">
+							<a href="#">
+								<img class="footer__logo" src="images/icons/logo.svg" alt="logo img">
+							</a>
+							<p class="footer__marketplace-info">
+								NFT marketplace UI created with Anima for Figma.
+							</p>
+							<p class="footer__marketplace-community">
+								Join our community
+							</p>
+							<ul class="footer__marketplace-list">
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/discord.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/youtube.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/twitter.svg" alt="social logo">
+									</a>
+								</li>
+								<li class="footer__marketplace-item">
+									<a class="footer__marketplace-link" href="#">
+										<img src="images/icons/instagram.svg" alt="social logo">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__explore">
+							<h5 class="footer__explore-title">
+								Explore
+							</h5>
+							<ul class="footer__explore-list">
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Marketplace
+									</a>
+								</li>
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Rankings
+									</a>
+								</li>
+								<li class="footer__explore-item">
+									<a class="footer__explore-link" href="#">
+										Connect a wallet
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__join">
+							<h5 class="footer__join-title">
+								Join our weekly digest
+							</h5>
+							<p class="footer__join-text">
+								Get exclusive promotions & updates straight to your inbox.
+							</p>
+							<form class="subscribe__form" action="#">
+								<input class="subscribe__input" type="email" placeholder="Enter Your Email">
+								<button class="subscribe__btn">
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">
+							Ⓒ NFT Market. Use this template freely.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
