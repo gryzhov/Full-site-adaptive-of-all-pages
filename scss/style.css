@@ -1189,6 +1189,10 @@ input[type=search]::-webkit-search-results-decoration {
     font-size: 16px;
     line-height: 140%;
   }
+  .artist-info #clockdiv {
+    width: 315px;
+    padding-left: 40px;
+  }
   .more-nft .more-nft__item:nth-child(n+3) {
     display: none;
   }
@@ -2548,4 +2552,11 @@ input[type=search]::-webkit-search-results-decoration {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
